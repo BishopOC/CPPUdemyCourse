@@ -45,16 +45,25 @@ int main() {
   cin >> number_of_large_rooms;
 
   cout << "Your price estimate is as follows:" << endl;
-  cout << "\nNumber of small rooms: " << number_of_small_rooms << endl;
-  cout << "Number of large rooms: " << number_of_large_rooms << endl;
-  cout << "Price per small room: $" << small_room_price << endl;
-  cout << "Price per large room: $" << large_room_price << endl;
-  cout << "Cost: $" << (number_of_small_rooms * small_room_price) + (number_of_large_rooms * large_room_price) << endl;
-  cout << "Tax: $" << ((number_of_small_rooms * small_room_price) + (number_of_large_rooms * large_room_price)) * tax << endl;
+  cout << "\nNumber of small rooms: "
+       << number_of_small_rooms << endl;
+  cout << "Number of large rooms: "
+       << number_of_large_rooms << endl;
+  cout << "Price per small room: $"
+       << small_room_price << endl;
+  cout << "Price per large room: $"
+       << large_room_price << endl;
+
+  cout << "Cost: $" << (number_of_small_rooms * small_room_price) +
+                       (number_of_large_rooms * large_room_price) << endl;
+
+  cout << "Tax: $" << ((number_of_small_rooms * small_room_price) +
+                       (number_of_large_rooms * large_room_price)) *
+                        tax << endl;
   cout << "=================================" << endl;
   cout << "Total Estimate: $" << ((number_of_small_rooms * small_room_price) + (number_of_large_rooms * large_room_price))
           + (((number_of_small_rooms * small_room_price) + (number_of_large_rooms * large_room_price)) * tax) << endl;
-  cout << "This estimate is valid for " << expiry << "." << endl;
+  cout << "This estimate is valid for " << expiry << "days." << endl;
 
   return 0;
 }
