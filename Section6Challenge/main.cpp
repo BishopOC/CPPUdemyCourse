@@ -61,8 +61,11 @@ int main() {
                        (number_of_large_rooms * large_room_price)) *
                         tax << endl;
   cout << "=================================" << endl;
-  cout << "Total Estimate: $" << ((number_of_small_rooms * small_room_price) + (number_of_large_rooms * large_room_price))
-          + (((number_of_small_rooms * small_room_price) + (number_of_large_rooms * large_room_price)) * tax) << endl;
+  cout << "Total Estimate: $"
+       << ((number_of_small_rooms * small_room_price) +
+           (number_of_large_rooms * large_room_price)) +
+           (((number_of_small_rooms * small_room_price) +
+             (number_of_large_rooms * large_room_price)) * tax) << endl;
   cout << "This estimate is valid for " << expiry << "days." << endl;
 
   return 0;
