@@ -44,7 +44,6 @@ int main() {
   cout << "\nEnter how many large rooms you would like cleaned: " << endl;
   cin >> number_of_large_rooms;
 
-  cout << "is git working?" << endl;
   cout << "Your price estimate is as follows:" << endl;
   cout << "\nNumber of small rooms: " << number_of_small_rooms << endl;
   cout << "Number of large rooms: " << number_of_large_rooms << endl;
